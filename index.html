@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Size Reducer</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>📉 Image Size Reducer</h2>
+
+        <input type="file" id="imageInput" accept="image/*" />
+        <input type="number" id="targetSize" placeholder="Enter target size (KB)" />
+
+        <button id="compressBtn">Compress Image</button>
+
+        <div class="output" id="output"></div>
+        <a id="downloadLink" style="display:none;" download="compressed_image.jpg">
+            <button>Download Compressed Image</button>
+        </a>
+
+        <img id="preview" alt="Preview" />
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
